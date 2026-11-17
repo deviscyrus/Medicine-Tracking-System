@@ -1,0 +1,15 @@
+{
+  "name": "medicine-tracking-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Medicine inventory tracking dashboard backed by MongoDB",
+  "main": "medicine_tracking_system.js",
+  "scripts": {
+    "start": "node medicine_tracking_system.js",
+    "check": "node --check medicine_tracking_system.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "mongodb": "^6.17.0"
+  }
+}
