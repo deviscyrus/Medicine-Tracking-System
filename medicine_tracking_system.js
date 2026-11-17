@@ -31,7 +31,7 @@ loadLocalConfig();
 const MONGO_URI = process.env.MONGO_URI || process.env.MONGODB_URI || "mongodb://127.0.0.1:27017";
 const DB_NAME = process.env.MONGO_DATABASE || process.env.MONGO_DB_NAME || "medicine_tracking_system_db";
 const PORT = Number.parseInt(process.env.PORT || "3000", 10);
-const HOST = "127.0.0.1";
+const HOST = "0.0.0.0";
 const BODY_LIMIT = 1024 * 1024;
 const LEVELS = ["HC II", "HC III", "HC IV", "Hospital"];
 const CATEGORIES = ["Antimalarial", "Antibiotic", "Painkiller", "Rehydration"];
