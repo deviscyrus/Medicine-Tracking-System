@@ -709,7 +709,7 @@ async function deleteEntity(name, id) {
     await findRequired(name, id, name.slice(0, -1), session);
     if (name === "healthcentres") {
       await db.collection("stockrecords").deleteMany({ centreId: id }, sessionOptions(session));
-    } else if (name === "me9dicines") {
+    } else if (name === "medicines") {
       await db.collection("stockrecords").deleteMany({ medicineId: id }, sessionOptions(session));
       await db.collection("suppliers").updateMany(
         {},
